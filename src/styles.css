@@ -30,3 +30,27 @@ body {
 .search-form-input:focus {
   border-color: rebeccapurple;
 }
+
+.gallery {
+  padding: 10px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.photo-card {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10px;
+  width: 263px;
+  list-style: none;
+}
+.stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.stats-item {
+  text-align: center;
+}
