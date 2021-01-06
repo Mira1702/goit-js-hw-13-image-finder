@@ -52,5 +52,10 @@ body {
   justify-content: center;
 }
 .stats-item {
+  display: grid;
+  margin-right: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   text-align: center;
+  color: rgb(129, 43, 129);
 }
