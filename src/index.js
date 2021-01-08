@@ -6,23 +6,31 @@ import 'handlebars';
 
 
 refs.searchForm.addEventListener('submit', event => {
-    event.preventDefault();
-
-    
+    event.preventDefault();    
 
     const form = event.currentTarget;
     apiService.query = form.elements.query.value;       
 
     refs.galleryList.innerHTML = '';
-    form.reset();
-
+    
     apiService.resertPage();
+    refs.loadMoreBtn.classList.add('is-hidden');
 
-    apiService.fetchApiSearch().then(markupImages);
-    const markup = markupImages(hits);
-    refs.galleryList.insertAdjacentHTML('beforeend', markup);
+    apiService
+        .fetchApiSearch()
+        .then(hits => {
+            markupImages(hits);
+            refs.loadMoreBtn.classList.remove('is-hidden');
+            window.scrollTo({
+                top: 1000000000,
+                behavior: 'smooth',
+            });
+        });
+    
+    form.reset();
 })
 
 refs.loadMoreBtn.addEventListener('click', () => {
     apiService.fetchApiSearch().then(markupImages);
 })
+

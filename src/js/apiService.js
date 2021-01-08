@@ -11,7 +11,7 @@ export default {
     return fetch(url)
         .then(response => response.json())  
         .then(({ hits }) => {
-            const markup = markupImages(hits);
+            const markup = markupImages(hits);            
             refs.galleryList.insertAdjacentHTML('beforeend', markup);
             this.page += 1;
             return hits;

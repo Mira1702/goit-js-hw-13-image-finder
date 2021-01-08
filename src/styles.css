@@ -72,3 +72,6 @@ body {
 .btn:focus {
   border-color: rebeccapurple;
 }
+.btn.is-hidden {
+  display: none;
+}
