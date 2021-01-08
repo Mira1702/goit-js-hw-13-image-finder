@@ -25,7 +25,7 @@ refs.searchForm.addEventListener('submit', event => {
                 top: document.documentElement.offsetHeight,
                 behavior: 'smooth',
             });
-        });
+    });
     
     form.reset();
 })
