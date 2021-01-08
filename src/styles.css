@@ -20,11 +20,11 @@ body {
 }
 
 .search-form-input {
-  font-size: 20px;
+  font-size: 15px;
   line-height: 1.5;
   text-align: center;
   margin: 20px;
-  width: 550px;
+  width: 350px;
 }
 .search-form-input:hover,
 .search-form-input:focus {
@@ -58,4 +58,17 @@ body {
   margin-bottom: 5px;
   text-align: center;
   color: rgb(129, 43, 129);
+}
+
+.btn {
+  display: block;
+  font-size: 15px;
+  line-height: 1.2;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn:hover,
+.btn:focus {
+  border-color: rebeccapurple;
 }
