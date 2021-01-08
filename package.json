@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/Mira1702/goit-js-hw-13-image-finder"
   },
-  "homepage": "https://Mira1702.github.io/goit-js-hw-13-image-finder",
+  "homepage": "https://mira1702.github.io/goit-js-hw-13-image-finder/",
   "devDependencies": {
     "@babel/cli": "^7.12.10",
     "@babel/core": "^7.12.10",
