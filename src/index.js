@@ -4,8 +4,11 @@ import markupImages from './tamplate/markupImages.hbs';
 import apiService from './js/apiService';
 import 'handlebars';
 
+
 refs.searchForm.addEventListener('submit', event => {
     event.preventDefault();
+
+    
 
     const form = event.currentTarget;
     apiService.query = form.elements.query.value;       
@@ -15,7 +18,9 @@ refs.searchForm.addEventListener('submit', event => {
 
     apiService.resertPage();
 
-    apiService.fetchApiSearch().then(markupImages);   
+    apiService.fetchApiSearch().then(markupImages);
+    const markup = markupImages(hits);
+    refs.galleryList.insertAdjacentHTML('beforeend', markup);
 })
 
 refs.loadMoreBtn.addEventListener('click', () => {
