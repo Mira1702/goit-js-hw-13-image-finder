@@ -22,7 +22,7 @@ refs.searchForm.addEventListener('submit', event => {
             markupImages(hits);
             refs.loadMoreBtn.classList.remove('is-hidden');
             window.scrollTo({
-                top: 1000000000,
+                top: document.documentElement.offsetHeight,
                 behavior: 'smooth',
             });
         });
